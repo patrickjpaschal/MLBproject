@@ -30,7 +30,7 @@ background-image:url("background.jpg")
 #textheader{
     height:60px;
     background-color:rgb(78, 77, 77);
-    color:white;
+    color:rgb(197, 197, 197);
   font-family: "Philosopher";
     z-index:55;
     margin-left: -15px;

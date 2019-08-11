@@ -50,7 +50,7 @@ $("#lookUpCity").on("click", function() {
 //       // In this case, the "this" keyword refers to the button that was clicked
 //       var homeTeam = $(this).attr("value");
 // console.log(this);
-var queryURL = `api.openweathermap.org/data/2.5/weather?id=${conceptName}&units=imperial&appid=6b1d1c3cef2c4bef15ddaaf8e3ceea4f`;
+var queryURL = `https://api.openweathermap.org/data/2.5/weather?id=${conceptName}&units=imperial&appid=6b1d1c3cef2c4bef15ddaaf8e3ceea4f`;
 $.ajax({
   type: 'GET',
   url:queryURL,

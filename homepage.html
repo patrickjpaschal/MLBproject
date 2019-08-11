@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+</head>
+
+<body>
+      <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+       <div id="page-container" class="container-fluid">
+            <marquee behavior="slide" direction="left"id="textheader">Welcome to The Compendium on Baseball Stats and Facts.</marquee>
+            <div id="wrapper" class="row">
+                <div id="left" class="col-9">
+              
+                 </div>
+                    <div id="right" class="col-3">
+                        <h1>Checkout The Weather at The Ball Park</h1>
+                           <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teams and Cities</button>
+                                  <div class="dropdown-menu" id="menu">
+                                    <a class="dropdown-item" href="#"
+                                    id="Astros-Houston, TX">Astros-Houston, TX</a>
+                                    <a class="dropdown-item" href="#">Texas Rangers-Arlington,TX</a>
+                                    <a class="dropdown-item" href="#">Yankees-New York,NY</a>
+                                    <a class="dropdown-item" href="#">Braves-Atlanta,GA</a>
+                                    <a class="dropdown-item" href="#">Marlins-Miami,FL</a>
+                                    <a class="dropdown-item" href="#">Phillies-Philadelphia,PA</a>
+                                    <a class="dropdown-item" href="#">Nationals-Washington DC</a>
+                                    <a class="dropdown-item" href="#">Mets-New York,NY</a>
+                                    <a class="dropdown-item" href="#">Cubs-Chicago,IL</a>
+                                    <a class="dropdown-item" href="#">White Sox-Chicago,IL</a>
+                                    <a class="dropdown-item" href="#">Reds-Cincinnati,OH</a>
+                                    <a class="dropdown-item" href="#">Brewers-Milwaukee,WI</a>
+                                    <a class="dropdown-item" href="#">Pirates-Pittsburgh,PA</a>
+                                    <a class="dropdown-item" href="#">Cardinals-St. Louis,MO</a>
+                                    <a class="dropdown-item" href="#">Diamondbacks-Phoenix,AZ</a>
+                                    <a class="dropdown-item" href="#">Rockies-Denver,CO</a>
+                                    <a class="dropdown-item" href="#">Dodgers-Los Angelos,CA</a>
+                                    <a class="dropdown-item" href="#">Padres-San Diego,CA</a>
+                                    <a class="dropdown-item" href="#">Giants-San Francisco,CA</a>
+                                    <a class="dropdown-item" href="#">Orioles-Baltimore,MD</a>
+                                    <a class="dropdown-item" href="#">Red Sox-Boston,MA</a>
+                                    <a class="dropdown-item" href="#">Rays-Tampa Bay,FL</a>
+                                    <a class="dropdown-item" href="#">Blue Jays-Toronto,ON CA</a>
+                                    <a class="dropdown-item" href="#">Indians-Cleveland,OH</a>
+                                    <a class="dropdown-item" href="#">Tigers-Detroit,MI</a>
+                                    <a class="dropdown-item" href="#">Royals-Kansas City,MO</a>
+                                    <a class="dropdown-item" href="#">Twins-Minneapolis,MN</a>
+                                    <a class="dropdown-item" href="#">Angels-Los Angelos,CA</a>
+                                    <a class="dropdown-item" href="#">Athletics-Oakland,CA</a>
+                                    <a class="dropdown-item" href="#">Mariners-Seattle,WA</a>
+                                     
+                                    
+                                                                      </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                              </div><select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Choose...</option>
+                                            <option value="1">Texas Rangers-Arlington,TX</option>
+                                            <option value="5128638">Yankees-New York,NY</option>
+                                            <option value="3">Braves-Atlanta,GA</option>
+                                            <option value="4">Marlins-Miami,FL</option>
+                                            <option value="5">Phillies-Philadelphia,PA</option>
+                                            <option value="6">Nationals-Washington DC</option>
+                                            <option value="7">Mets-New York,NY</option>
+                                            <option value="8">Cubs-Chicago,IL</option>
+                                            <option value="9">White Sox-Chicago,IL</option>
+                                            <option value="10">Reds-Cincinnati,OH</option>
+                                            <option value="11">Brewers-Milwaukee,WI</option>
+                                            <option value="12">Pirates-Pittsburgh,PA</option>
+                                            <option value="13">Cardinals-St. Louis,MO</option>
+                                            <option value="14">Diamondbacks-Phoenix,AZ</option>
+                                            <option value="15">Rockies-Denver,CO</option>
+                                            <option value="16">Dodgers-Los Angelos,CA</option>
+                                            <option value="17">Padres-San Diego,CA</option>
+                                            <option value="18">Giants-San Francisco,CA</option>
+                                            <option value="19">Orioles-Baltimore,MD</option>
+                                            <option value="20">Red Sox-Boston,MA</option>
+                                            <option value="21">Rays-Tampa Bay,FL</option>
+                                            <option value="22">Blue Jays-Toronto,ON CA</option>
+                                            <option value="23">Indians-Cleveland,OH</option>
+                                            <option value="24">Tigers-Detroit,MI</option>
+                                            <option value="25">Royals-Kansas City,MO</option>
+                                            <option value="26">Twins-Minneapolis,MN</option>
+                                            <option value="27">Angels-Los Angelos,CA</option>
+                                            <option value="28">Athletics-Oakland,CA</option>
+                                            <option value="29">Mariners-Seattle,WA</option>
+                                            <option value="4699066">Astros-Houston,TX</option>
+                                            
+                                           
+
+                                          </select>
+                                          <button id="lookUpCity" class="button"/>Look At The Weather&nbsp;✌</button><br><br><br>
+                            <div class="city"></div><br>
+                             <div class="wind"></div><br>
+                             <div class="humidity"></div><br>
+                            <div class="temp"></div><br>
+                            <button id="randomFact" class="button"/>Random Facts&nbsp;✌</button><br><br><br>
+                            <div id="factsDisplay"></div><br>
+                    </div>
+
+            </div>
+
+       </div>
+       <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>

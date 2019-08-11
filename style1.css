@@ -1,0 +1,149 @@
+body {
+    background-color: #cc2b5e;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+}
+
+.navbar-toggler {
+    border-color: blue;
+}
+
+.navbar-toggler:hover {
+    -moz-box-shadow: 0 0 20px #ccc;
+    -webkit-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.fa-align-justify {
+    color: blue;
+}
+
+#nav-title {
+    /*
+    font-family: 'Saira Stencil One', cursive;
+    */
+    font-family: 'Audiowide', cursive;
+}
+
+.dropdown-menu {
+    background-color: #ffc3a0;
+}
+
+.dropdown-item:hover {
+    background-color: black;
+    color: #ffc3a0;
+}
+
+#score-title {
+    font-family: 'Audiowide', cursive;
+    font-size: 60px;
+}
+
+.card {
+    width: 100%;
+}
+
+.card-header {
+    background-color: black;
+    color: #ffc3a0;
+    font-family: 'Audiowide', cursive;
+    font-size: 25px;
+}
+
+.your-team-name {
+    padding: 0 20;
+}
+
+.your-team-name {
+    display: inline;
+    vertical-align: middle;
+}
+
+/* important */
+.your-team-scores {
+    padding: 5 20 20 20;
+}
+
+#vs-opponent {
+    margin-bottom: 5px;
+    background-color: #ffc3a0;
+}
+
+#vs-opponent:hover {
+    background-color: black;
+    color: #ffc3a0;
+}
+
+/*----------------------*/
+/* Particles Background */
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.infoBox {
+    display: flex;
+    justify-content: center;
+    min-height: min-content;
+    width: 50%;
+    background-color: red;
+    z-index: 0;
+    align-items: center;
+}
+
+.wholeBody {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.particles-js-canvas-el {
+    position: absolute;
+    z-index: -1;
+}
+
+.inputBox {
+    height: 20px;
+}
+
+#standings {
+    background-color: white;
+    display: inline-block;
+    width: 380px;
+}
+
+#standings-tables {
+    padding: 0 100px;
+}
+
+.leagues {
+    padding: 0 100px;
+    color: white;
+}
+
+.table {
+    margin: 0px !important;
+}
+
+.standings-losses {
+    text-align: center;
+}
+
+.standings-wins {
+    text-align: center;
+}
+
+/* Particles Background */
+/*----------------------*/
